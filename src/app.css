@@ -10,9 +10,10 @@
     --font-family-regular: 'PTSans', Helvetica, Arial, sans-serif;
 
     --border: 1px solid var(--color-border);
-    --border-radius: .5rem;
+    --border-radius: 1rem;
 
-    --page-padding: 4rem 5rem;
+    --page-padding-horizontal: 5rem;
+    --page-padding-vertical: 4rem;
 }
 
 @font-face {
@@ -46,7 +47,7 @@ body {
     position: relative;
     margin: 0;
     line-height: 1.5;
-    padding: var(--page-padding);
+    padding: var(--page-padding-vertical) var(--page-padding-horizontal);
 }
 * {
     box-sizing: border-box;
@@ -87,14 +88,60 @@ h1, h2, h3, h4, h5 {
 }
 
 .project-story {
-    max-width: 800px;
-    font-size: 1.2rem;
+    --project-story-gap: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--project-story-gap);
+    font-size: 1.4rem;
     line-height: 2;
 }
-.project-story img {
+.project-story strong {
+    font-family: var(--font-family-accedent);
+}
+
+.project-story .photos {
+    width: calc(100% + var(--page-padding-horizontal) * 2);
+    margin-left: calc(-1 * var(--page-padding-horizontal));
+    margin-right: calc(-1 * var(--page-padding-horizontal));
+    padding: var(--project-story-gap) var(--page-padding-horizontal);
+
+    display: flex;
+    align-items: center;
+    gap: var(--project-story-gap);
+    background: rgba(0,0,0,.1);
+}
+
+.project-story .photos.two > div {
+    flex: 0 0 calc(50% - var(--project-story-gap) /2 );
+}
+.project-story .photos.two > div:first-of-type {
+    padding: var(--project-story-gap) 0;
+}
+
+.project-story .photos.two.reversed > div:first-of-type {
+    padding: 0;
+}
+.project-story .photos.two.reversed > div:last-of-type {
+    padding: var(--project-story-gap) 0;
+}
+
+.project-story .photos.two > div > img {
+    /*height: 100%;*/
     width: 100%;
-    margin: 3rem 0;
+    object-fit: cover;
     border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.project-story .text {
+    max-width: 1200px;
+}
+.project-story .text:first-child {
+    margin-top: 0;
+}
+.project-story .text:last-child {
+    margin-bottom: 0;
 }
 
 @media (min-width: 1900px) {

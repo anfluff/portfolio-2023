@@ -19,7 +19,7 @@
       id: 'ivy',
       role: 'Senior Frontend Dev',
       title: 'Ivy',
-      description: 'Gigwork FinTech Startup'
+      description: 'Embedded lending for the gig economy'
     },
     {
       id: 'lsmp',
@@ -31,7 +31,7 @@
       id: 'hemagon',
       role: 'Fullstack Dev',
       title: 'Hemagon',
-      description: 'Fencing Framework'
+      description: 'Platform for hosting sport competitions and ranking system'
     },
     {
       id: 'evenedium',
@@ -46,16 +46,16 @@
       description: 'Uber for brokers'
     },
     {
-      id: 'kvetun',
-      role: 'Fullstack Dev',
-      title: 'Kvetun',
-      description: 'CRM for leading fencing equipment producer'
-    },
-    {
       id: 'zzapp',
       role: 'Fullstack Dev',
       title: 'Zzapp',
       description: 'Educational web base quiz game'
+    },
+    {
+      id: 'kvetun',
+      role: 'Fullstack Dev',
+      title: 'Kvetun',
+      description: 'Custom CRM for leading fencing equipment producer'
     }
   ]
   const filteredProjects = excludeId

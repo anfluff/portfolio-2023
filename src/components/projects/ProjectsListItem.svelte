@@ -45,6 +45,10 @@
     mouseWithinBlock = false
   }
   const handleMouseMove = (event) => {
+    if (event.clientY === 0 || event.clientX === 0) {
+      mouseWithinBlock = false
+      return
+    }
     previewEl.style.transform = 'translateY('+(event.clientY-60)+'px)'
     previewEl.style.transform += 'translateX('+(event.clientX-100)+'px)'
   }
@@ -83,12 +87,17 @@
        left: 0;
        top: 0;
        z-index: 4;
-       width: 400px;
-       height: 225px;
+       /*width: 400px;*/
+       /*height: 225px;*/
+       width: 500px;
+       height: 281px;
        background: black;
        border-radius: var(--border-radius);
        overflow: hidden;
        pointer-events: none;
+       display: flex;
+       align-items: center;
+       justify-content: center;
    }
    .preview img {
        width: 100%;

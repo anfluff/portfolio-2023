@@ -55,7 +55,7 @@
       width: 100%;
       height: 80vh;
       background: var(--color-pink);
-      padding: var(--page-padding);
+      padding: var(--page-padding-vertical) var(--page-padding-horizontal);
       padding-bottom: 7rem;
       font-size: 2rem;
 

@@ -50,7 +50,7 @@
 
 <style>
   footer {
-      margin-top: 4rem;
+      margin-top: 6rem;
       padding-top: 4rem;
       border-top: var(--border);
   }
