@@ -1,16 +1,22 @@
 :root {
-    --color-teal-background: #232827;
-    --color-teal-text: #758680;
-    --color-pink: #DD7F90;
+    /*--color-background: #232827;*/
+    /*--color-primary: #DD7F90;*/
+    /*--color-secondary: #758680;*/
+    --color-background: #2e3440;
+    --color-primary: #88c0d0;
+    --color-secondary: #5e81ac;
     --color-white: #FFFFFF;
     --color-border: rgba(255, 255, 255, 0.2);
 
-    --font-family-accedent: 'Eczar', Georgia, serif;
+    --font-family-accedent: 'PixelifySans', Georgia, serif;
+    /*--font-family-accedent: 'Eczar', Georgia, serif;*/
     /*--font-family-accedent: 'Unbounded', Georgia, serif;*/
-    --font-family-regular: 'PTSans', Helvetica, Arial, sans-serif;
+    /*--font-family-regular: 'PTSans', Helvetica, Arial, sans-serif;*/
+    --font-family-regular: 'RobotoMono', Helvetica, Arial, sans-serif;
 
     --border: 1px solid var(--color-border);
-    --border-radius: 1rem;
+    /*--border-radius: 1rem;*/
+    --border-radius: 0rem;
 
     --page-padding-horizontal: 5rem;
     --page-padding-vertical: 4rem;
@@ -36,12 +42,22 @@
     src: url('./fonts/Eczar-Bold.ttf');
     font-weight: bold;
 }
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('./fonts/PixelifySans-SemiBold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('./fonts/RobotoMono-Regular.ttf');
+    font-weight: bold;
+}
 
 html {
     font-size: 16px;
     font-family: var(--font-family-regular);
-    color: var(--color-teal-text);
-    background: var(--color-teal-background);
+    color: var(--color-secondary);
+    background: var(--color-background);
 }
 body {
     position: relative;
@@ -59,7 +75,7 @@ a {
     transition: color .15s ease;
 }
 a:hover {
-    color: var(--color-pink);
+    color: var(--color-primary);
 }
 
 button {

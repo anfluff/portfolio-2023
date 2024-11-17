@@ -70,16 +70,16 @@
    .content {
        display: inline-block;
        font-size: 1.4rem;
-       color: var(--color-teal-text);
+       color: var(--color-secondary);
        transition: color .15s ease;
    }
 
    .project:hover {
-       color: var(--color-pink);
+       color: var(--color-primary);
        cursor: pointer;
    }
    .project:hover .content {
-       color: var(--color-pink);
+       color: var(--color-primary);
    }
 
    .preview {

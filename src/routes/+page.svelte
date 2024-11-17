@@ -1,7 +1,7 @@
 <div class="main">
   <div class="photo">
     <img
-      src="/src/images/myself/nicolay-apraksin.jpg"
+      src="/src/images/myself/nicolay-morozov.jpg"
       alt="Nicolay Apraksin — fullstack frontend developer, product designer, IT enthusiast"
     />
   </div>
@@ -12,8 +12,8 @@
 </div>
 
 <div class="credentials">
-  <h1>Nicolay
-    Apraksin</h1>
+  <h1>Nikolai
+    Morozov</h1>
 
   <div class="pusher"></div>
 
@@ -94,11 +94,12 @@
       align-items: flex-end;
   }
   .credentials h1 {
-      font-size: 9rem;
+      font-size: 10rem;
       line-height: 9rem;
       margin: 0;
       white-space: pre-line;
       user-select: none;
+      text-shadow: 0 0 1rem var(--color-background);
   }
   .credentials .content {
       position: relative;
@@ -117,13 +118,13 @@
       gap: 12px;
   }
   .credentials .content .links * {
-    color: var(--color-teal-text);
+    color: var(--color-secondary);
   }
   .credentials .content .links a {
       display: inline-block;
   }
   .credentials .content .links a:hover {
-      color: var(--color-pink);
+      color: var(--color-primary);
   }
   .credentials .content .icon {
       width: 2.2rem;

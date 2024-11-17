@@ -31,7 +31,7 @@
       id: 'hemagon',
       role: 'Fullstack Dev',
       title: 'Hemagon',
-      description: 'Platform for hosting sport competitions and ranking system'
+      description: 'Tournament management software'
     },
     {
       id: 'evenedium',

@@ -54,7 +54,7 @@
       left: 0;
       width: 100%;
       height: 80vh;
-      background: var(--color-pink);
+      background: var(--color-primary);
       padding: var(--page-padding-vertical) var(--page-padding-horizontal);
       padding-bottom: 7rem;
       font-size: 2rem;
@@ -75,6 +75,8 @@
   }
   h1 {
       line-height: 1;
+      font-size: 10rem;
+      margin-bottom: 1rem;
   }
 
   .description {
