@@ -14,10 +14,10 @@
 
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/ivy/0.png" alt="Nicolay Apraksin / Altera IOS App / Index, Business list, Business detail">
+      <img src="/src/images/projects/ivy/0.png" alt="Nikolai Morozov / Altera IOS App / Index, Business list, Business detail">
     </div>
     <div>
-      <img src="/src/images/projects/ivy/ivy-1.png" alt="Nicolay Apraksin / Altera IOS App / Index, Business list, Business detail">
+      <img src="/src/images/projects/ivy/ivy-1.png" alt="Nikolai Morozov / Altera IOS App / Index, Business list, Business detail">
     </div>
   </div>
 
@@ -27,10 +27,10 @@
 
   <div class="two photos reversed">
     <div>
-      <img src="/src/images/projects/ivy/3.png" alt="Nicolay Apraksin / Altera IOS App / Index, Business list, Business detail">
+      <img src="/src/images/projects/ivy/3.png" alt="Nikolai Morozov / Altera IOS App / Index, Business list, Business detail">
     </div>
     <div>
-      <img src="/src/images/projects/ivy/1.png" alt="Nicolay Apraksin / Altera IOS App / Index, Business list, Business detail">
+      <img src="/src/images/projects/ivy/1.png" alt="Nikolai Morozov / Altera IOS App / Index, Business list, Business detail">
     </div>
   </div>
 
@@ -41,10 +41,10 @@
 
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/ivy/2.png" alt="Nicolay Apraksin / Altera IOS App / Index, Business list, Business detail">
+      <img src="/src/images/projects/ivy/2.png" alt="Nikolai Morozov / Altera IOS App / Index, Business list, Business detail">
     </div>
     <div>
-      <img src="/src/images/projects/ivy/4.png" alt="Nicolay Apraksin / Altera IOS App / Index, Business list, Business detail">
+      <img src="/src/images/projects/ivy/4.png" alt="Nikolai Morozov / Altera IOS App / Index, Business list, Business detail">
     </div>
   </div>
 </div>
@@ -55,3 +55,7 @@
   import ProjectHeader from '../../../components/projects/ProjectHeader.svelte'
   import PageFooter from '../../../components/PageFooter.svelte'
 </script>
+
+<style>
+  @import "../../../styles/project.css";
+</style>

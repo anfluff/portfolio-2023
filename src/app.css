@@ -1,167 +1,142 @@
 :root {
-    /*--color-background: #232827;*/
-    /*--color-primary: #DD7F90;*/
-    /*--color-secondary: #758680;*/
-    --color-background: #2e3440;
-    --color-primary: #88c0d0;
-    --color-secondary: #5e81ac;
-    --color-white: #FFFFFF;
-    --color-border: rgba(255, 255, 255, 0.2);
+  /*--color-background: #232827;*/
+  /*--color-primary: #DD7F90;*/
+  /*--color-secondary: #758680;*/
+  --color-background: #2e3440;
+  --color-primary: #88c0d0;
+  --color-secondary: #5e81ac;
+  --color-white: #FFFFFF;
+  --color-border: rgba(255, 255, 255, 0.2);
 
-    --font-family-accedent: 'PixelifySans', Georgia, serif;
-    /*--font-family-accedent: 'Eczar', Georgia, serif;*/
-    /*--font-family-accedent: 'Unbounded', Georgia, serif;*/
-    /*--font-family-regular: 'PTSans', Helvetica, Arial, sans-serif;*/
-    --font-family-regular: 'RobotoMono', Helvetica, Arial, sans-serif;
+  --font-size-html: 14px;
 
-    --border: 1px solid var(--color-border);
-    /*--border-radius: 1rem;*/
-    --border-radius: 0rem;
+  --font-family-accedent: 'PixelifySans', Georgia, serif;
+  /*--font-family-accedent: 'Eczar', Georgia, serif;*/
+  /*--font-family-accedent: 'Unbounded', Georgia, serif;*/
+  /*--font-family-regular: 'PTSans', Helvetica, Arial, sans-serif;*/
+  --font-family-regular: 'RobotoMono', Helvetica, Arial, sans-serif;
 
+  --border: 1px solid var(--color-border);
+  /*--border-radius: 1rem;*/
+  --border-radius: 0rem;
+
+  --page-padding-horizontal: 1rem;
+  --page-padding-vertical: 1rem;
+}
+
+/* VARIABLES MEDIA */
+
+@media (min-width: 1024px) {
+  :root {
+    --page-padding-horizontal: 4rem;
+    --page-padding-vertical: 3rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --font-size-html: 16px;
     --page-padding-horizontal: 5rem;
     --page-padding-vertical: 4rem;
-}
-
-@font-face {
-    font-family: 'PTSans';
-    src: url('./fonts/PTSans-Regular.ttf');
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'PTSans';
-    src: url('./fonts/PTSans-Bold.ttf');
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'Unbounded';
-    src: url('./fonts/Unbounded-Bold.ttf');
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'Eczar';
-    src: url('./fonts/Eczar-Bold.ttf');
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'PixelifySans';
-    src: url('./fonts/PixelifySans-SemiBold.ttf');
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'RobotoMono';
-    src: url('./fonts/RobotoMono-Regular.ttf');
-    font-weight: bold;
-}
-
-html {
-    font-size: 16px;
-    font-family: var(--font-family-regular);
-    color: var(--color-secondary);
-    background: var(--color-background);
-}
-body {
-    position: relative;
-    margin: 0;
-    line-height: 1.5;
-    padding: var(--page-padding-vertical) var(--page-padding-horizontal);
-}
-* {
-    box-sizing: border-box;
-}
-
-a {
-    color: var(--color-white);
-    text-decoration: none;
-    transition: color .15s ease;
-}
-a:hover {
-    color: var(--color-primary);
-}
-
-button {
-    border: none;
-    background: none;
-    color: var(--color-white);
-    font-family: var(--font-family-regular);
-    cursor: pointer;
-}
-
-h1 {
-    font-size: 5rem;
-}
-h2 {
-    font-size: 3rem;
-}
-h3 {
-    font-size: 2.5rem;
-}
-h4 {
-    font-size: 2rem;
-}
-h1, h2, h3, h4, h5 {
-    font-family: var(--font-family-accedent);
-    color: var(--color-white);
-}
-
-.project-story {
-    --project-story-gap: 3rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: var(--project-story-gap);
-    font-size: 1.4rem;
-    line-height: 2;
-}
-.project-story strong {
-    font-family: var(--font-family-accedent);
-}
-
-.project-story .photos {
-    width: calc(100% + var(--page-padding-horizontal) * 2);
-    margin-left: calc(-1 * var(--page-padding-horizontal));
-    margin-right: calc(-1 * var(--page-padding-horizontal));
-    padding: var(--project-story-gap) var(--page-padding-horizontal);
-
-    display: flex;
-    align-items: center;
-    gap: var(--project-story-gap);
-    background: rgba(0,0,0,.1);
-}
-
-.project-story .photos.two > div {
-    flex: 0 0 calc(50% - var(--project-story-gap) /2 );
-}
-.project-story .photos.two > div:first-of-type {
-    padding: var(--project-story-gap) 0;
-}
-
-.project-story .photos.two.reversed > div:first-of-type {
-    padding: 0;
-}
-.project-story .photos.two.reversed > div:last-of-type {
-    padding: var(--project-story-gap) 0;
-}
-
-.project-story .photos.two > div > img {
-    /*height: 100%;*/
-    width: 100%;
-    object-fit: cover;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-}
-
-.project-story .text {
-    max-width: 1200px;
-}
-.project-story .text:first-child {
-    margin-top: 0;
-}
-.project-story .text:last-child {
-    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1900px) {
-    html {
-        font-size: 18px;
-    }
+  :root {
+    --font-size-html: 18px;
+  }
+}
+
+/* FONTS */
+
+/*@font-face {*/
+/*    font-family: 'PTSans';*/
+/*    src: url('./fonts/PTSans-Regular.ttf');*/
+/*    font-weight: normal;*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'PTSans';*/
+/*    src: url('./fonts/PTSans-Bold.ttf');*/
+/*    font-weight: bold;*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'Unbounded';*/
+/*    src: url('./fonts/Unbounded-Bold.ttf');*/
+/*    font-weight: bold;*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'Eczar';*/
+/*    src: url('./fonts/Eczar-Bold.ttf');*/
+/*    font-weight: bold;*/
+/*}*/
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('./fonts/PixelifySans-SemiBold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('./fonts/RobotoMono-Regular.ttf');
+  font-weight: bold;
+}
+
+/* COMMON STYLES */
+
+html {
+  font-size: var(--font-size-html);
+  font-family: var(--font-family-regular);
+  color: var(--color-secondary);
+  background: var(--color-background);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  line-height: 1.5;
+  padding: var(--page-padding-vertical) var(--page-padding-horizontal);
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color .15s ease;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+button {
+  border: none;
+  background: none;
+  color: var(--color-white);
+  font-family: var(--font-family-regular);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-family-accedent);
+  color: var(--color-white);
 }

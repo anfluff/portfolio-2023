@@ -18,13 +18,13 @@
     <div>
       <img
         src="/src/images/projects/lsmp/1_2.png"
-        alt="Nicolay Apraksin / LondonSMP / My Timetable"
+        alt="Nikolai Morozov / LondonSMP / My Timetable"
       >
     </div>
     <div>
       <img
         src="/src/images/projects/lsmp/lsmp-1.png"
-        alt="Nicolay Apraksin / LondonSMP / Room Allocation"
+        alt="Nikolai Morozov / LondonSMP / Room Allocation"
       >
     </div>
   </div>
@@ -38,13 +38,13 @@
     <div>
       <img
         src="/src/images/projects/lsmp/lsmp-2.jpg"
-        alt="Nicolay Apraksin / LondonSMP / Room Allocation"
+        alt="Nikolai Morozov / LondonSMP / Room Allocation"
       >
     </div>
     <div>
       <img
         src="/src/images/projects/lsmp/1_1.png"
-        alt="Nicolay Apraksin / LondonSMP / Room Allocation"
+        alt="Nikolai Morozov / LondonSMP / Room Allocation"
       >
     </div>
   </div>
@@ -60,13 +60,13 @@
     <div>
       <img
         src="/src/images/projects/lsmp/2_6.png"
-        alt="Nicolay Apraksin / LondonSMP / Room Allocation"
+        alt="Nikolai Morozov / LondonSMP / Room Allocation"
       >
     </div>
     <div>
       <img
         src="/src/images/projects/lsmp/2_4.png"
-        alt="Nicolay Apraksin / LondonSMP / Room Allocation"
+        alt="Nikolai Morozov / LondonSMP / Room Allocation"
       >
     </div>
   </div>
@@ -82,3 +82,7 @@
   import ProjectHeader from '../../../components/projects/ProjectHeader.svelte'
   import PageFooter from '../../../components/PageFooter.svelte'
 </script>
+
+<style>
+    @import "../../../styles/project.css";
+</style>

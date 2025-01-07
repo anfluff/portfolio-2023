@@ -15,13 +15,13 @@
     <div>
       <img
         src="/src/images/projects/altera/altera-1.jpg"
-        alt="Nicolay Apraksin / Altbroker / Objects list"
+        alt="Nikolai Morozov / Altbroker / Objects list"
       >
     </div>
     <div>
       <img
         src="/src/images/projects/altera/altera-2.jpg"
-        alt="Nicolay Apraksin / Altbroker / Objects list"
+        alt="Nikolai Morozov / Altbroker / Objects list"
       >
     </div>
   </div>
@@ -33,10 +33,10 @@
   </div>
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/altera/altbroker/2.png" alt="Nicolay Apraksin / Altbroker / Objects list">
+      <img src="/src/images/projects/altera/altbroker/2.png" alt="Nikolai Morozov / Altbroker / Objects list">
     </div>
     <div>
-      <img src="/src/images/projects/altera/altbroker/3.png" alt="Nicolay Apraksin / Altbroker / Filters">
+      <img src="/src/images/projects/altera/altbroker/3.png" alt="Nikolai Morozov / Altbroker / Filters">
     </div>
   </div>
 
@@ -47,10 +47,10 @@
   </div>
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/altera/altera-ios/1.png" alt="Nicolay Apraksin / Altera IOS App / Index, Business list, Business detail">
+      <img src="/src/images/projects/altera/altera-ios/1.png" alt="Nikolai Morozov / Altera IOS App / Index, Business list, Business detail">
     </div>
     <div>
-      <img src="/src/images/projects/altera/altera-ios/2.png" alt="Nicolay Apraksin / Altera IOS App / Filters system">
+      <img src="/src/images/projects/altera/altera-ios/2.png" alt="Nikolai Morozov / Altera IOS App / Filters system">
     </div>
   </div>
 
@@ -61,10 +61,10 @@
   </div>
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/altera/findesk/1.png" alt="Nicolay Apraksin / Findesk Mobile / Index, Business list, Filters">
+      <img src="/src/images/projects/altera/findesk/1.png" alt="Nikolai Morozov / Findesk Mobile / Index, Business list, Filters">
     </div>
     <div>
-      <img src="/src/images/projects/altera/findesk/3.png" alt="Nicolay Apraksin / Findesk Mobile / Business comparison">
+      <img src="/src/images/projects/altera/findesk/3.png" alt="Nikolai Morozov / Findesk Mobile / Business comparison">
     </div>
   </div>
 
@@ -87,3 +87,7 @@
   import ProjectHeader from '../../../components/projects/ProjectHeader.svelte'
   import PageFooter from '../../../components/PageFooter.svelte'
 </script>
+
+<style>
+    @import "../../../styles/project.css";
+</style>

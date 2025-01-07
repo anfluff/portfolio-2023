@@ -10,7 +10,7 @@
 </div>
 
 <script>
-  export let excludeId
+  export let excludeId = ''
 
   import ProjectsListItem from './ProjectsListItem.svelte'
 
@@ -50,12 +50,6 @@
       role: 'Fullstack Dev',
       title: 'Zzapp',
       description: 'Educational web base quiz game'
-    },
-    {
-      id: 'kvetun',
-      role: 'Fullstack Dev',
-      title: 'Kvetun',
-      description: 'Custom CRM for leading fencing equipment producer'
     }
   ]
   const filteredProjects = excludeId

@@ -69,7 +69,6 @@
    }
    .content {
        display: inline-block;
-       font-size: 1.4rem;
        color: var(--color-secondary);
        transition: color .15s ease;
    }

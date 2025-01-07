@@ -1,11 +1,9 @@
 <div class="project-intro">
   <BackButton />
 
-  <div class="caption">
-    <h1>{ title }</h1>
-    <div class="description">
-      ― { description }
-    </div>
+  <h1>{ title }</h1>
+  <div class="description">
+    ― { description }
   </div>
 
   <div class="features">
@@ -14,9 +12,9 @@
         <h3>Roles</h3>
         <div class="roles">
           {#each roles as role, index}
-            <span>{role}</span>
+            <div>{role}</div>
             {#if index < roles.length - 1}
-              •
+              <div class="delimiter">•</div>
             {/if}
           {/each}
         </div>
@@ -36,7 +34,6 @@
     {/if}
   </div>
 </div>
-<div class="pusher"></div>
 
 <script>
   import BackButton from '../BackButton.svelte'
@@ -49,25 +46,22 @@
 
 <style>
   .project-intro {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 80vh;
-      background: var(--color-primary);
+      position: relative;
+      margin-left: calc(-1 * var(--page-padding-horizontal));
+      margin-top: calc(-1 * var(--page-padding-vertical));
+      width: calc(100% + var(--page-padding-horizontal) * 2);;
+
+      background: var(--color-secondary);
       padding: var(--page-padding-vertical) var(--page-padding-horizontal);
-      padding-bottom: 7rem;
-      font-size: 2rem;
+      padding-bottom: 5rem;
+      margin-bottom: 5rem;
 
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 3rem;
 
+      font-size: 1.5rem;
       color: var(--color-white);
-  }
-
-  .pusher {
-      height: 80vh;
   }
 
   h1, h3 {
@@ -76,23 +70,22 @@
   h1 {
       line-height: 1;
       font-size: 10rem;
-      margin-bottom: 1rem;
+  }
+  h3 {
+      font-size: 3rem;
   }
 
   .description {
       max-width: 1000px;
+      font-size: 2rem;
+      opacity: .8;
   }
 
   a:not(:hover) {
-      opacity: .5;
+      opacity: .8;
   }
   a:hover {
-      color: var(--color-white);
       opacity: 1;
-  }
-
-  .caption {
-      padding-bottom: 2rem;
   }
 
   .features {
@@ -102,6 +95,36 @@
 
   .roles {
       display: flex;
-      gap: 12px;
+      gap: 1rem;
+      opacity: .8;
+  }
+
+  @media (max-width: 480px) {
+      h1 {
+          font-size: 6rem;
+          line-break: anywhere;
+      }
+
+      .project-intro {
+          gap: 3rem;
+          padding-bottom: 3rem;
+          margin-bottom: 3rem;
+      }
+
+      .description {
+          font-size: 1.5rem;
+      }
+
+      .features {
+          flex-direction: column;
+          gap: 3rem;
+      }
+      .roles {
+          flex-direction: column;
+          gap: 0;
+      }
+      .delimiter {
+          display: none;
+      }
   }
 </style>

@@ -16,13 +16,13 @@
     <div>
       <img
         src="/src/images/projects/hemagon/hemagon-1.jpg"
-        alt="Nicolay Apraksin / Hemagon / Platform for hosting sports competitions"
+        alt="Nikolai Morozov / Hemagon / Platform for hosting sports competitions"
       >
     </div>
     <div>
       <img
         src="/src/images/projects/hemagon/2a.png"
-        alt="Nicolay Apraksin / Hemagon / Platform for hosting sports competitions"
+        alt="Nikolai Morozov / Hemagon / Platform for hosting sports competitions"
       >
     </div>
   </div>
@@ -36,13 +36,13 @@
     <div>
       <img
         src="/src/images/projects/hemagon/9.png"
-        alt="Nicolay Apraksin / Hemagon / Fight demo"
+        alt="Nikolai Morozov / Hemagon / Fight demo"
       >
     </div>
     <div>
       <img
         src="/src/images/projects/hemagon/11.png"
-        alt="Nicolay Apraksin / Hemagon / Stream caption"
+        alt="Nikolai Morozov / Hemagon / Stream caption"
       >
     </div>
   </div>
@@ -55,13 +55,13 @@
     <div>
       <img
         src="/src/images/projects/hemagon/4.png"
-         alt="Nicolay Apraksin / Hemagon / Rating"
+         alt="Nikolai Morozov / Hemagon / Rating"
       >
     </div>
     <div>
       <img
         src="/src/images/projects/hemagon/hemagon-6.jpg"
-         alt="Nicolay Apraksin / Hemagon / Rating"
+         alt="Nikolai Morozov / Hemagon / Rating"
       >
     </div>
   </div>
@@ -73,3 +73,7 @@
   import ProjectHeader from '../../../components/projects/ProjectHeader.svelte'
   import PageFooter from '../../../components/PageFooter.svelte'
 </script>
+
+<style>
+    @import "../../../styles/project.css";
+</style>

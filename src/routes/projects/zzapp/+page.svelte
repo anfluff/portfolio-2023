@@ -14,10 +14,10 @@
 
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/zzapp/zzapp-2.jpg" alt="Nicolay Apraksin / Zzapp / Index">
+      <img src="/src/images/projects/zzapp/zzapp-2.jpg" alt="Nikolai Morozov / Zzapp / Index">
     </div>
     <div>
-      <img src="/src/images/projects/zzapp/1.png" alt="Nicolay Apraksin / Zzapp / Index">
+      <img src="/src/images/projects/zzapp/1.png" alt="Nikolai Morozov / Zzapp / Index">
     </div>
   </div>
 
@@ -28,11 +28,11 @@
 
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/zzapp/3.png" alt="Nicolay Apraksin / Zzapp / Game">
-      <img src="/src/images/projects/zzapp/4.png" alt="Nicolay Apraksin / Zzapp / Timeout">
+      <img src="/src/images/projects/zzapp/3.png" alt="Nikolai Morozov / Zzapp / Game">
+      <img src="/src/images/projects/zzapp/4.png" alt="Nikolai Morozov / Zzapp / Timeout">
     </div>
     <div>
-      <img src="/src/images/projects/zzapp/zzapp-4.jpg" alt="Nicolay Apraksin / Zzapp / Game">
+      <img src="/src/images/projects/zzapp/zzapp-4.jpg" alt="Nikolai Morozov / Zzapp / Game">
     </div>
   </div>
 
@@ -43,10 +43,10 @@
 
   <div class="two photos reversed">
     <div>
-      <img src="/src/images/projects/zzapp/zzapp-5.jpg" alt="Nicolay Apraksin / Zzapp / Game">
+      <img src="/src/images/projects/zzapp/zzapp-5.jpg" alt="Nikolai Morozov / Zzapp / Game">
     </div>
     <div>
-      <img src="/src/images/projects/zzapp/7.png" alt="Nicolay Apraksin / Zzapp / Shop">
+      <img src="/src/images/projects/zzapp/7.png" alt="Nikolai Morozov / Zzapp / Shop">
     </div>
   </div>
 
@@ -56,10 +56,10 @@
 
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/zzapp/8.png" alt="Nicolay Apraksin / Zzapp / Question creation">
+      <img src="/src/images/projects/zzapp/8.png" alt="Nikolai Morozov / Zzapp / Question creation">
     </div>
     <div>
-      <img src="/src/images/projects/zzapp/9.png" alt="Nicolay Apraksin / Zzapp / Question creation">
+      <img src="/src/images/projects/zzapp/9.png" alt="Nikolai Morozov / Zzapp / Question creation">
     </div>
   </div>
 </div>
@@ -70,3 +70,7 @@
 import ProjectHeader from '../../../components/projects/ProjectHeader.svelte'
 import PageFooter from '../../../components/PageFooter.svelte'
 </script>
+
+<style>
+    @import "../../../styles/project.css";
+</style>

@@ -39,47 +39,60 @@
 </footer>
 
 <script>
-  import IconEmail from './icons/IconEmail.svelte'
+  import IconEmail from './icons/IconEmail.svelte';
 
-  export let excludeId
+  export let excludeId;
 
-  import ProjectsList from './projects/ProjectsList.svelte'
-  import IconLinkedIn from './icons/IconLinkedIn.svelte'
-  import IconTelegram from './icons/IconTelegram.svelte'
+  import ProjectsList from './projects/ProjectsList.svelte';
+  import IconLinkedIn from './icons/IconLinkedIn.svelte';
+  import IconTelegram from './icons/IconTelegram.svelte';
 </script>
 
 <style>
-  footer {
-      margin-top: 6rem;
-      padding-top: 4rem;
-      border-top: var(--border);
-  }
+    footer {
+        margin-top: 6rem;
+        padding-top: 4rem;
+        border-top: var(--border);
+    }
 
-  .line {
-      display: flex;
-      gap: 8rem;
-  }
-  .line .label {
-      font-size: 5rem;
-      font-family: var(--font-family-accedent);
-      line-height: 1;
-      flex: 0 0 400px;
-  }
-  .line .content {
-      flex-grow: 1;
-  }
+    .line {
+        display: flex;
+        gap: 4rem;
+    }
 
-  .line + .line {
-      margin-top: 4rem;
-  }
+    .line .label {
+        font-size: 5rem;
+        font-family: var(--font-family-accedent);
+        line-height: 1;
+        flex: 0 0 400px;
+    }
 
-  .icons {
-      display: flex;
-      gap: 2rem;
-  }
+    .line .content {
+        flex-grow: 1;
+    }
 
-  .icons > a {
-      width: 3.5rem;
-      fill: currentColor;
-  }
+    .line + .line {
+        margin-top: 4rem;
+    }
+
+    .icons {
+        display: flex;
+        gap: 2rem;
+        align-items: end;
+    }
+
+    .icons > a {
+        width: 3.5rem;
+        fill: currentColor;
+    }
+
+    @media (max-width: 480px) {
+        .line {
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .line .label {
+            flex-basis: auto;
+        }
+    }
 </style>

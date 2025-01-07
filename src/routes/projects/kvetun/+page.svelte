@@ -13,10 +13,10 @@
 
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/kvetun/0.png" alt="Nicolay Apraksin / Kvetun /  Orders table">
+      <img src="/src/images/projects/kvetun/0.png" alt="Nikolai Morozov / Kvetun /  Orders table">
     </div>
     <div>
-      <img src="/src/images/projects/kvetun/kvetun-1.jpg" alt="Nicolay Apraksin / Kvetun /  Orders table">
+      <img src="/src/images/projects/kvetun/kvetun-1.jpg" alt="Nikolai Morozov / Kvetun /  Orders table">
     </div>
   </div>
 
@@ -29,11 +29,11 @@
 
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/kvetun/5.png" alt="Nicolay Apraksin / Kvetun / Product modules set">
-      <img src="/src/images/projects/kvetun/6.png" alt="Nicolay Apraksin / Kvetun / Product in order customisation">
+      <img src="/src/images/projects/kvetun/5.png" alt="Nikolai Morozov / Kvetun / Product modules set">
+      <img src="/src/images/projects/kvetun/6.png" alt="Nikolai Morozov / Kvetun / Product in order customisation">
     </div>
     <div>
-      <img src="/src/images/projects/kvetun/8.png" alt="Nicolay Apraksin / Kvetun / Product in order customisation">
+      <img src="/src/images/projects/kvetun/8.png" alt="Nikolai Morozov / Kvetun / Product in order customisation">
     </div>
   </div>
 
@@ -44,10 +44,10 @@
 
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/kvetun/9.png" alt="Nicolay Apraksin / Kvetun / Task labels">
+      <img src="/src/images/projects/kvetun/9.png" alt="Nikolai Morozov / Kvetun / Task labels">
     </div>
     <div>
-      <img src="/src/images/projects/kvetun/10.png" alt="Nicolay Apraksin / Kvetun / Task detail">
+      <img src="/src/images/projects/kvetun/10.png" alt="Nikolai Morozov / Kvetun / Task detail">
     </div>
   </div>
 
@@ -65,3 +65,7 @@
 import ProjectHeader from '../../../components/projects/ProjectHeader.svelte'
 import PageFooter from '../../../components/PageFooter.svelte'
 </script>
+
+<style>
+    @import "../../../styles/project.css";
+</style>

@@ -1,133 +1,71 @@
 <div class="main">
-  <div class="photo">
-    <img
-      src="/src/images/myself/nicolay-morozov.jpg"
-      alt="Nicolay Apraksin — fullstack frontend developer, product designer, IT enthusiast"
-    />
+  <div class="person">
+    <div class="container">
+      <Photo />
+
+      <Name />
+    </div>
   </div>
 
   <div class="projects">
     <ProjectsList />
-  </div>
-</div>
 
-<div class="credentials">
-  <h1>Nikolai
-    Morozov</h1>
-
-  <div class="pusher"></div>
-
-  <div class="content">
-    <div class="cta">Looking for a job. Strive to relocate!</div>
-    <div class="links">
-      <a
-        href="/CV.pdf"
-        download
-      >
-        Download CV
-      </a>
-      •
-      <a href="/about">
-        About me
-      </a>
-      •
-      <a
-        href="mailto:nickolayanatolievich@gmail.com"
-        target="_blank"
-        rel="noreferrer"
-        class="icon"
-      >
-        <IconEmail />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/nicolay-apraksin"
-        target="_blank"
-        rel="noreferrer"
-        class="icon"
-      >
-        <IconLinkedIn />
-      </a>
-      <a
-        href="https://t.me/afluff"
-        target="_blank"
-        rel="noreferrer"
-        class="icon"
-      >
-        <IconTelegram />
-      </a>
-    </div>
+    <Signature />
   </div>
 </div>
 
 <script>
-  import ProjectsList from '../components/projects/ProjectsList.svelte'
-  import IconEmail from '../components/icons/IconEmail.svelte'
-  import IconLinkedIn from '../components/icons/IconLinkedIn.svelte'
-  import IconTelegram from '../components/icons/IconTelegram.svelte'
+  import ProjectsList from '../components/projects/ProjectsList.svelte';
+  import Photo from '../components/Photo.svelte';
+  import Signature from '../components/Signature.svelte';
+  import Name from '../components/Name.svelte';
 </script>
 
 <style>
-  .main {
-      display: flex;
-      gap: 5vw;
-  }
-  .main .photo {
-      flex: 0 0 30vw;
-      border-radius: var(--border-radius);
-      overflow: hidden;
-      max-height: 80vh
-  }
-  .main .photo img {
-      width: 100%;
-  }
-  .main .projects {
-      flex-grow: 1;
-      position: relative;
-      z-index: 2;
-  }
+    .main {
+        display: flex;
+        gap: 5vw;
+    }
 
-  .credentials {
-      position: relative;
-      margin-top: -260px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-  }
-  .credentials h1 {
-      font-size: 10rem;
-      line-height: 9rem;
-      margin: 0;
-      white-space: pre-line;
-      user-select: none;
-      text-shadow: 0 0 1rem var(--color-background);
-  }
-  .credentials .content {
-      position: relative;
-      z-index: 3;
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
-      text-align: right;
-  }
-  .credentials .content .cta {
-      color: var(--color-white);
-      margin-bottom: 1rem;
-  }
-  .credentials .content .links {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-  }
-  .credentials .content .links * {
-    color: var(--color-secondary);
-  }
-  .credentials .content .links a {
-      display: inline-block;
-  }
-  .credentials .content .links a:hover {
-      color: var(--color-primary);
-  }
-  .credentials .content .icon {
-      width: 2.2rem;
-      height: 2.2rem;
-  }
+    .main .person {
+        flex: 0 0 30vw;
+        position: relative;
+        height: calc(100vh - var(--page-padding-vertical) * 2);
+    }
+
+    .main .person .container {
+        /*position: absolute;*/
+
+
+        /*width: 100%;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*bottom: 0;*/
+
+        position: fixed;
+        z-index: 2;
+        top: var(--page-padding-vertical);
+        bottom: var(--page-padding-vertical);
+        left: var(--page-padding-horizontal);
+        width: 30vw;
+    }
+
+    .main .projects {
+        flex-grow: 1;
+        position: relative;
+    }
+
+    @media (max-width: 480px) {
+        .main {
+            flex-direction: column;
+        }
+        .main .person {
+            flex-basis: 60vh;
+        }
+        .main .person .container {
+            position: static;
+            height: 100%;
+            width: 100%;
+        }
+    }
 </style>

@@ -16,13 +16,13 @@
     <div>
       <img
         src="/src/images/projects/evenedium/game.jpg"
-        alt="Nicolay Apraksin / Evenedium / Game printed"
+        alt="Nikolai Morozov / Evenedium / Game printed"
       >
     </div>
     <div>
       <img
         src="/src/images/projects/evenedium/evenedium-3.svg"
-        alt="Nicolay Apraksin / Evenedium / Game printed"
+        alt="Nikolai Morozov / Evenedium / Game printed"
       >
     </div>
   </div>
@@ -37,13 +37,13 @@
     <div>
       <img
         src="/src/images/projects/evenedium/evenedium-4.png"
-        alt="Nicolay Apraksin / Evenedium / Game printed"
+        alt="Nikolai Morozov / Evenedium / Game printed"
       >
     </div>
     <div>
       <img
         src="/src/images/projects/evenedium/evenedium-2.png"
-        alt="Nicolay Apraksin / Evenedium / Game printed"
+        alt="Nikolai Morozov / Evenedium / Game printed"
       >
     </div>
   </div>
@@ -57,10 +57,10 @@
 
   <div class="two photos">
     <div>
-      <img src="/src/images/projects/evenedium/1.png" alt="Nicolay Apraksin / Evenedium / World map">
+      <img src="/src/images/projects/evenedium/1.png" alt="Nikolai Morozov / Evenedium / World map">
     </div>
     <div>
-      <img src="/src/images/projects/evenedium/6.svg" alt="Nicolay Apraksin / Evenedium / Icons">
+      <img src="/src/images/projects/evenedium/6.svg" alt="Nikolai Morozov / Evenedium / Icons">
     </div>
   </div>
 </div>
@@ -71,3 +71,7 @@
   import ProjectHeader from '../../../components/projects/ProjectHeader.svelte'
   import PageFooter from '../../../components/PageFooter.svelte'
 </script>
+
+<style>
+    @import "../../../styles/project.css";
+</style>
