@@ -1,0 +1,29 @@
+:root {
+    --color-background: #2e3440;
+    --color-primary: #88c0d0;
+    --color-secondary: #5e81ac;
+    --color-white: #FFFFFF;
+    --color-border: rgba(255, 255, 255, 0.2);
+
+    --font-size-html: 14px;
+    --font-size-project-role: 2rem;
+    --font-size-project-content: 1.2rem;
+
+    --font-family-accedent: 'PixelifySans', Georgia, serif;
+    --font-family-regular: 'RobotoMono', Helvetica, Arial, sans-serif;
+
+    --border: 1px solid var(--color-border);
+    --border-radius: 0rem;
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('../fonts/PixelifySans-SemiBold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono-Regular.ttf');
+    font-weight: bold;
+}

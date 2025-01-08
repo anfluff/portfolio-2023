@@ -57,7 +57,7 @@
 
     .line {
         display: flex;
-        gap: 4rem;
+        gap: var(--page-padding-horizontal);
     }
 
     .line .label {
@@ -89,7 +89,7 @@
     @media (max-width: 480px) {
         .line {
             flex-direction: column;
-            gap: 2rem;
+            gap: var(--page-padding-vertical);
         }
         .line .label {
             flex-basis: auto;

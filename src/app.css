@@ -1,25 +1,9 @@
+@import "./styles/morozov.css";
+/*@import "./styles/apraksin.css";*/
+
+/* VARIABLES */
+
 :root {
-  /*--color-background: #232827;*/
-  /*--color-primary: #DD7F90;*/
-  /*--color-secondary: #758680;*/
-  --color-background: #2e3440;
-  --color-primary: #88c0d0;
-  --color-secondary: #5e81ac;
-  --color-white: #FFFFFF;
-  --color-border: rgba(255, 255, 255, 0.2);
-
-  --font-size-html: 14px;
-
-  --font-family-accedent: 'PixelifySans', Georgia, serif;
-  /*--font-family-accedent: 'Eczar', Georgia, serif;*/
-  /*--font-family-accedent: 'Unbounded', Georgia, serif;*/
-  /*--font-family-regular: 'PTSans', Helvetica, Arial, sans-serif;*/
-  --font-family-regular: 'RobotoMono', Helvetica, Arial, sans-serif;
-
-  --border: 1px solid var(--color-border);
-  /*--border-radius: 1rem;*/
-  --border-radius: 0rem;
-
   --page-padding-horizontal: 1rem;
   --page-padding-vertical: 1rem;
 }
@@ -47,40 +31,6 @@
   }
 }
 
-/* FONTS */
-
-/*@font-face {*/
-/*    font-family: 'PTSans';*/
-/*    src: url('./fonts/PTSans-Regular.ttf');*/
-/*    font-weight: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'PTSans';*/
-/*    src: url('./fonts/PTSans-Bold.ttf');*/
-/*    font-weight: bold;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Unbounded';*/
-/*    src: url('./fonts/Unbounded-Bold.ttf');*/
-/*    font-weight: bold;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Eczar';*/
-/*    src: url('./fonts/Eczar-Bold.ttf');*/
-/*    font-weight: bold;*/
-/*}*/
-@font-face {
-  font-family: 'PixelifySans';
-  src: url('./fonts/PixelifySans-SemiBold.ttf');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'RobotoMono';
-  src: url('./fonts/RobotoMono-Regular.ttf');
-  font-weight: bold;
-}
-
 /* COMMON STYLES */
 
 html {
@@ -105,7 +55,7 @@ body {
 a {
   color: var(--color-white);
   text-decoration: none;
-  transition: color .15s ease;
+  transition: all .15s ease;
 }
 
 a:hover {

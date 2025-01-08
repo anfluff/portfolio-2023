@@ -64,12 +64,13 @@
    .role {
        display: inline-block;
        margin-right: 1rem;
-       font-size: 2rem;
+       font-size: var(--font-size-project-role);
        font-family: var(--font-family-accedent);
    }
    .content {
        display: inline-block;
        color: var(--color-secondary);
+       font-size: var(--font-size-project-content);
        transition: color .15s ease;
    }
 

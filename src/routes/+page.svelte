@@ -24,7 +24,7 @@
 <style>
     .main {
         display: flex;
-        gap: 5vw;
+        gap: var(--page-padding-horizontal);
     }
 
     .main .person {
@@ -34,14 +34,6 @@
     }
 
     .main .person .container {
-        /*position: absolute;*/
-
-
-        /*width: 100%;*/
-        /*top: 0;*/
-        /*left: 0;*/
-        /*bottom: 0;*/
-
         position: fixed;
         z-index: 2;
         top: var(--page-padding-vertical);

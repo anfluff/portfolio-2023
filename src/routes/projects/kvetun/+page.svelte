@@ -65,7 +65,3 @@
 import ProjectHeader from '../../../components/projects/ProjectHeader.svelte'
 import PageFooter from '../../../components/PageFooter.svelte'
 </script>
-
-<style>
-    @import "../../../styles/project.css";
-</style>

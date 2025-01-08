@@ -51,14 +51,16 @@
       margin-top: calc(-1 * var(--page-padding-vertical));
       width: calc(100% + var(--page-padding-horizontal) * 2);;
 
+      /*background: var(--color-primary);*/
       background: var(--color-secondary);
+
       padding: var(--page-padding-vertical) var(--page-padding-horizontal);
-      padding-bottom: 5rem;
-      margin-bottom: 5rem;
+      padding-bottom: calc(var(--page-padding-vertical) * 1.5);
+      margin-bottom: calc(var(--page-padding-vertical) * 1.5);
 
       display: flex;
       flex-direction: column;
-      gap: 3rem;
+      gap: var(--page-padding-vertical);
 
       font-size: 1.5rem;
       color: var(--color-white);
@@ -82,15 +84,18 @@
   }
 
   a:not(:hover) {
-      opacity: .8;
+      opacity: .5;
+      text-decoration: underline;
   }
   a:hover {
       opacity: 1;
+      color: var(--color-white);
   }
 
   .features {
       display: flex;
-      gap: 5rem;
+      margin-top: calc(var(--page-padding-vertical) / 2);
+      gap: var(--page-padding-horizontal);
   }
 
   .roles {
